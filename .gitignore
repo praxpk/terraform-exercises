@@ -1,0 +1,43 @@
+########################################
+# Terraform (recursive, all subfolders)
+########################################
+
+# Terraform working directories (providers, modules, plugins)
+**/.terraform/*
+**/.terraform.lock.hcl.tmp
+
+# Terraform state files (local state only — never commit)
+**/*.tfstate
+**/*.tfstate.*
+
+# Terraform plan files
+**/*.tfplan
+
+# Variable files (often contain secrets)
+**/*.tfvars
+**/*.tfvars.json
+
+# Terraform CLI config (user-specific)
+**/.terraformrc
+**/terraform.rc
+
+# Override files (local experiments)
+**/override.tf
+**/override.tf.json
+**/*_override.tf
+**/*_override.tf.json
+
+########################################
+# Crash logs
+########################################
+**/crash.log
+**/crash.*.log
+
+########################################
+# Editor / OS noise (recursive)
+########################################
+**/.DS_Store
+**/.idea/
+**/.vscode/
+**/*.swp
+**/*~
